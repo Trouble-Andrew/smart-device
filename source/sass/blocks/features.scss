@@ -1,0 +1,129 @@
+.features {
+  padding-top: 112px;
+}
+
+.features__list {
+  @include clear-mp;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features__item {
+  @include clear-mp;
+  @include clear-list;
+  // width: 570px;
+  width: 48.5%;
+  margin-bottom: 30px;
+  padding-top: 39px;
+  padding-left: 42px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  border: 1px solid $bg-grey;
+  border-left: 2px solid $bg-blue;
+  background-color: $bg-white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $bg-blue;
+
+    & .features__item-title,
+    .features__item-descr {
+      color: $c-text-white;
+    }
+
+    & path {
+      fill: red;
+    }
+  }
+}
+
+.features__item:nth-child(3),
+.features__item:nth-child(4), {
+  padding-bottom: 69px;
+}
+
+.features__item-title {
+  margin-top: 16px;
+  margin-bottom: 17px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: $c-text-blue;
+}
+
+.features__item-descr {
+  font-family: "PTMono", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $c-text-grey;
+}
+
+@media (max-width: $desktop-width - 1) {
+  .features {
+    padding-top: 54px;
+  }
+
+  .features__item {
+    width: 48.2%;
+    padding-top: 23px;
+    padding-left: 26px;
+    padding-right: 25px;
+    padding-bottom: 3px;
+  }
+
+  .features__item-title {
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+
+  .features__item-descr {
+    margin-top: 0;
+  }
+
+  .features__item:nth-child(3),
+  .features__item:nth-child(4), {
+    padding-bottom: 8px;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+  .features {
+    padding-top: 37px;
+  }
+
+  .features__item {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 11px;
+    padding-right: 15px;
+  }
+
+  .features__item:nth-child(2) {
+    padding-right: 5px;
+  }
+
+  .features__item:nth-child(3) {
+    padding-right: 15px;
+  }
+
+  .features__item:nth-child(4) {
+    padding-right: 20px;
+  }
+
+  .features__item-title {
+    font-size: 20px;
+    line-height: 140.62%;
+    margin-top: 10px;
+    margin-bottom: 9px;
+  }
+
+  .features__item-descr {
+    line-height: 21.6px;
+  }
+}

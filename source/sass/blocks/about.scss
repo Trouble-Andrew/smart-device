@@ -1,0 +1,24 @@
+.about {
+  background-image: url("../img/about-bg.png");
+  background-size: contain;
+  background-position: 190px -20px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $desktop-width - 1) {
+  .about {
+    background-image: url("../img/about-bg-tablet.png");
+    background-size: contain;
+    background-position: 248px 92px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+  .about {
+    background-image: url("../img/about-bg-mobile.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

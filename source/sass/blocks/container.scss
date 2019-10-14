@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: $desktop-width - 1) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+//
+//
+// @media (min-width: $desktop-width) {
+//   .container {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     width: 1050px;
+//     margin: 0 auto;
+//   }
+// }

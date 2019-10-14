@@ -7,9 +7,10 @@
   background-color: #1b2931;
   color: $c-text-white;
   padding-top: 353px;
-  padding-bottom: 275px;
+  padding-bottom: 277px;
   padding-left: 15px;
   padding-right: 15px;
+  overflow-y: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-desktop@2x.png");
@@ -106,7 +107,7 @@
 @media (max-width: $desktop-width - 1) {
   .hero-unit {
     padding-top: 238px;
-    padding-bottom: 275px;
+    padding-bottom: 166px;
     background-image: url("../img/hero-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -160,6 +161,12 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet-img@2x.png");
+      // background-size: 75%;
+      // right: -385px;
+      // top: -265px;
+      background-size: 100%;
+      right: -299px;
+      top: -158px;
     }
   }
 }
@@ -219,6 +226,9 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-mobile-img@2x.png");
+      // background-size: 100%;
+      background-size: 118%;
+      top: -304px;
     }
   }
 }

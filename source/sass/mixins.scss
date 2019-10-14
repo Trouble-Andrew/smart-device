@@ -1,0 +1,15 @@
+@mixin clear-mp {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin clear-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin clear-link {
+  overflow: hidden;
+  text-decoration: none;
+}

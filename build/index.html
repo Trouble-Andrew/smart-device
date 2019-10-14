@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <header class="page-header">
+    <a href="#" class="page-header__logo">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve" class="page-header__logo-svg">
+        <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+      </svg>
+      <h1 class="page-header__logo-title">Smart Device</h1>
+      <p class="page-header__logo-subtitle">умные технологии</p>
+    </a>
+    <nav class="main-nav">
+      <button type="button" name="button" class="main-nav__toggle"></button>
+      <a href="#" class="main-nav__email email">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve" class="main-nav__email-svg">
+          <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+        </svg>
+        info@sd.ru
+      </a>
+      <a href="+74950005252" class="main-nav__telephone telephone">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve" class="main-nav__phone-svg">
+          <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+        </svg>
+        +7 (495) 000 52 52
+      </a>
+      <button type="button" name="button" class="main-nav__btn btn">Заказать звонок</button>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="hero-unit">
+      <div class="hero-unit__container">
+        <h1 class="hero-unit__title">Печатные платы</h1>
+        <p class="hero-unit__descr">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <button type="button" name="button" class="hero-unit__btn btn">Получить бесплатную консультацию<span class="hero-unit__btn-mobile">Бесплатная консультация</span></button>
+        <a href="#" class="hero-unit__scroll">Скролл вниз</a>
+        <div class="hero-unit__picture"></div>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.min.js"></script>
+  <script src="js/libs/svg4everybody.min.js"></script>
+  <script defer="" src="js/libs/svgxuse.min.js"></script>
+  <script defer="" src="js/libs/picturefill.min.js"></script>
 </body>
+
 </html>

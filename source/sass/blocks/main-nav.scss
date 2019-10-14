@@ -1,0 +1,124 @@
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-left: 122px;
+}
+
+.main-nav__btn {
+  margin-left: 49px;
+}
+
+.main-nav__telephone,
+.main-nav__email {
+  @include clear-link;
+  display: flex;
+  align-items: center;
+  color: $c-text-white;
+  font-family: "PTMono", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-nav__telephone {
+  margin-left: 86px;
+}
+
+.main-nav__phone-svg {
+  margin-right: 15px;
+}
+
+.main-nav__email-svg {
+  margin-right: 20px;
+}
+
+.main-nav__toggle {
+  position: relative;
+  margin-right: auto;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 18px;
+    right: 0;
+
+    width: 37px;
+    height: 1px;
+
+    background-color: $bg-white;
+
+    &:active::before {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &::after {
+    top: 28px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-nav {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: $desktop-width - 1) {
+  .main-nav__btn {
+    display: none;
+  }
+
+  .main-nav__telephone,
+  .main-nav__email {
+    font-size: 0;
+  }
+
+  .main-nav__telephone {
+    margin-left: 18px;
+  }
+
+  .main-nav__email {
+    margin-left: 39px;
+  }
+
+  .main-nav__phone-svg {
+    margin-right: 0;
+  }
+
+  .main-nav__email-svg {
+    margin-right: 20px;
+  }
+
+  .main-nav__toggle {
+    margin-right: 0;
+
+    &::before,
+    &::after {
+      top: 7px;
+    }
+
+    &::after {
+      top: 19px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+  .main-nav__telephone {
+    margin-left: 8px;
+  }
+
+  .main-nav__email {
+    margin-left: 30px;
+  }
+}

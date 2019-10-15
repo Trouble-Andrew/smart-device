@@ -1,6 +1,6 @@
 .offers {
   background-color: #1b2d37;
-  padding-bottom: 116px;
+  padding-bottom: 128px;
 }
 
 .offers__list {
@@ -13,7 +13,7 @@
   @include clear-mp;
   @include clear-list;
   width: 32%;
-  min-height: 620px;
+  height: 620px;
 
   & img {
     height: 100%;
@@ -33,13 +33,14 @@
 
 @media (max-width: $desktop-width - 1) {
   .offers {
-    padding-bottom: 39px;
+    padding-bottom: 32px;
   }
 
   .offers__title {
     font-size: 32px;
     line-height: 140.62%;
     margin-top: 50px;
+    margin-bottom: 49px;
     padding-right: 94px;
   }
 
@@ -52,14 +53,14 @@
 
   .offers__item {
     width: 100%;
-    min-height: 256px;
-    margin-bottom: 40px;
+    height: 256px;
+    margin-bottom: 46px;
   }
 }
 
 @media (max-width: $tablet-width - 1) {
   .offers {
-    padding-bottom: 33px;
+    padding-bottom: 34px;
   }
 
   .offers__title {
@@ -71,6 +72,6 @@
   }
 
   .offers__item {
-    margin-bottom: 27px;
+    margin-bottom: 30px;
   }
 }

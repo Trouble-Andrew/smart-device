@@ -1,0 +1,151 @@
+.request {
+  background-color: $bg-blue;
+  color: $c-text-white;
+  padding-top: 55px;
+  padding-bottom: 112px;
+  overflow-x: hidden;
+
+  & .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    // overflow-x: hidden;
+  }
+}
+
+.request__col {
+  position: relative;
+  width: 50%;
+  padding-left: 11px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -785px;
+    top: -115px;
+    width: 690px;
+    height: 641px;
+    background-image: url("../img/request-ap@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/request-ap@2x.png");
+      background-size: 100%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -469px;
+    top: -21px;
+    width: 458px;
+    height: 588px;
+    background-image: url("../img/request-rec@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/request-rec@2x.png");
+      background-size: 80%;
+    }
+  }
+}
+
+.request__title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: $c-text-white;
+  margin-bottom: 0;
+}
+
+
+.request__descr {
+  font-family: "PTMono", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $c-text-white;
+  margin-top: 10px;
+  padding-left: 5px;
+  margin-bottom: 51px;
+}
+
+@media (max-width: 1200px) {
+  .request__col {
+    width: 56%;
+  }
+}
+
+@media (max-width: $desktop-width - 1) {
+  .request {
+    padding-top: 48px;
+    padding-bottom: 104px;
+
+    & .container {
+      justify-content: center;
+    }
+  }
+
+  .request__col {
+    position: relative;
+    width: 83%;
+    padding-left: 4px;
+
+    &::before {
+      background-image: none;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: none;
+      }
+    }
+
+    &::after {
+      background-image: none;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: none;
+      }
+    }
+  }
+
+  .request__title {
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+
+  .request__descr {
+    margin-top: 15px;
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+  .request {
+    padding-top: 1px;
+    padding-bottom: 50px;
+  }
+
+  .request__col {
+    position: relative;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .request__title {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  .request__descr {
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 0;
+    margin-bottom: 25px;
+  }
+}

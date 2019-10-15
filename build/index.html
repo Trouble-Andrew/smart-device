@@ -130,8 +130,25 @@
         <div class="request__col">
           <h3 class="request__title">Остались вопросы? Задайте их нам!</h3>
           <p class="request__descr">Мы проконсультируем Вас бесплатно</p>
-          <form action="#" method="get" class="request__form form">
 
+          <form action="#" method="get" class="request__form form">
+            <div class="form__fieldset">
+              <div class="form__field-wrapper">
+                <label for="name" class="visually-hidden">Имя</label>
+                <input type="text" name="name" id="name" placeholder="Имя" class="form__input" required="">
+              </div>
+              <div class="form__field-wrapper">
+                <label for="phone" class="visually-hidden">Телефон</label>
+                <input type="number" name="phone" id="phone" placeholder="Телефон" class="form__input form__input--phone" required="">
+              </div>
+              <div class="form__field-wrapper form__field-wrapper--area">
+                <label for="question" class="visually-hidden">Вопрос</label>
+                <textarea name="question" id="question" class="form__textarea" placeholder="Ваш вопрос" required=""></textarea>
+              </div>
+            </div>
+            <button type="submit" class="form__btn btn">ЗАДАТЬ ВОПРОС</button>
+            <input type="checkbox" name="accept" class="form__checkbox visually-hidden" id="accept">
+            <label for="accept" class="form__checkbox-label">Я согласен на обработку персональных данных</label>
           </form>
         </div>
       </div>

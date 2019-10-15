@@ -3,6 +3,7 @@
   background-size: contain;
   background-position: 190px -20px;
   background-repeat: no-repeat;
+  padding-bottom: 109px;
 }
 
 @media (max-width: $desktop-width - 1) {
@@ -11,6 +12,7 @@
     background-size: contain;
     background-position: 248px 92px;
     background-repeat: no-repeat;
+    padding-bottom: 86px;
   }
 }
 
@@ -20,5 +22,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-bottom: 63px;
   }
 }

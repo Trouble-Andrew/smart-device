@@ -14,14 +14,10 @@
     padding-right: 25px;
   }
 }
-//
-//
-// @media (min-width: $desktop-width) {
-//   .container {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     width: 1050px;
-//     margin: 0 auto;
-//   }
-// }
+
+@media (max-width: $tablet-width - 1) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

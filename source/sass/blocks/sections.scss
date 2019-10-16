@@ -1,0 +1,28 @@
+.sections__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 120px;
+}
+
+@media (max-width: $desktop-width - 1) {
+  .sections__list {
+    flex-wrap: nowrap;
+    height: auto;
+    margin-left: -2px;
+  }
+}
+
+// @media (max-width: $tablet-width - 1) {
+//   .sections__title {
+//     position: relative;
+//
+//     &::after {
+//       content: "+";
+//       position: absolute;
+//       right: 0;
+//       top: 0;
+//     }
+//   }
+// }

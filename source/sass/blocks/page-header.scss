@@ -7,6 +7,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   max-width: 1441px;
   min-height: 108px;
   margin: 0 auto;
@@ -15,6 +16,7 @@
   padding-left: 15px;
   padding-right: 15px;
   z-index: 100;
+  flex: 0 0 auto;
 }
 
 .page-header__logo {
@@ -37,11 +39,12 @@
   font-size: 25px;
   line-height: 29px;
   color: $c-text-white;
+  margin-bottom: 3px;
 }
 
 .page-header__logo-subtitle {
   @include clear-mp;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -59,6 +62,7 @@
 
 @media (max-width: $desktop-width - 1) {
   .page-header {
+    width: 100%;
     padding-left: 25px;
     padding-right: 25px;
   }

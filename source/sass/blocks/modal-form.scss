@@ -1,0 +1,72 @@
+.modal-form {
+  display: none;
+  width: 490px;
+  min-height: 605px;
+  top: 50%;
+  left: 50%;
+  padding-top: 29px;
+  padding-left: 40px;
+  padding-right: 38px;
+  transform: translate(-50%, -50%);
+  background-color: $bg-blue;
+}
+
+.modal-form__title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 140.62%;
+  color: $c-text-white;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+
+.modal-form__descr {
+  font-family: "PTMono", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $c-text-white;
+  margin-top: 10px;
+  padding-left: 0;
+  padding-right: 25px;
+  margin-bottom: 34px;
+}
+
+.modal-form__field-wrapper {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.modal-form__input {
+  width: 100%;
+  padding-left: 22px;
+}
+
+.modal-form__textarea {
+  height: 103px;
+  padding-left: 22px;
+}
+
+.modal-form__btn {
+  width: 100%;
+}
+
+.modal-form__checkbox-label {
+  width: 360px;
+  padding-left: 47px;
+  padding-top: 26px;
+
+  &::before {
+    left: -2px;
+    top: 28px;
+  }
+
+  &::after {
+    left: 2px;
+    top: 31px;
+  }
+}

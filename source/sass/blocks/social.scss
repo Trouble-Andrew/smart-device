@@ -1,0 +1,36 @@
+.social__list {
+  @include clear-mp;
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+}
+
+.social__item {
+  @include clear-list;
+}
+
+.social__link {
+  display: block;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+  .social {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social__list {
+    margin-left: -4px;
+  }
+}

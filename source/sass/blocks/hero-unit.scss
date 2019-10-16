@@ -61,10 +61,15 @@
 
 .hero-unit__btn {
   background-color: $bg-blue;
+  border: none;
   padding: 17px 43px;
   margin-left: 95px;
   font-size: 16px;
   line-height: 19px;
+
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .hero-unit__btn-mobile {
@@ -107,7 +112,7 @@
 @media (max-width: $desktop-width - 1) {
   .hero-unit {
     padding-top: 238px;
-    padding-bottom: 166px;
+    padding-bottom: 163px;
     background-image: url("../img/hero-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -130,7 +135,7 @@
   .hero-unit__descr {
     width: 70%;
     padding-left: 51px;
-    margin-bottom: 56px;
+    margin-bottom: 58px;
     font-size: 18px;
     line-height: 1.5;
 

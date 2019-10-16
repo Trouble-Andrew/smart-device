@@ -1,0 +1,40 @@
+.logo {
+  @include clear-link;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 52px;
+  color: $c-text-white;
+  padding-left: 65px;
+  padding-top: 6px;
+}
+
+.logo__title {
+  @include clear-mp;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  color: $c-text-white;
+  margin-bottom: 2px;
+}
+
+.logo__subtitle {
+  @include clear-mp;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #788891;
+}
+
+.logo__svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 52px;
+  height: 52px;
+}

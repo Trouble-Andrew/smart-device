@@ -166,9 +166,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet-img@2x.png");
-      // background-size: 75%;
-      // right: -385px;
-      // top: -265px;
       background-size: 100%;
       right: -299px;
       top: -158px;
@@ -231,7 +228,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-mobile-img@2x.png");
-      // background-size: 100%;
       background-size: 118%;
       top: -304px;
     }

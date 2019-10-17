@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  padding-left: 106px;
+  padding-left: 96px;
 }
 
 .main-nav__btn {
@@ -21,6 +21,14 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__telephone {
@@ -38,12 +46,20 @@
 .main-nav__toggle {
   position: relative;
   margin-right: auto;
-  width: 30px;
+  width: 40px;
   height: 30px;
   padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::before,
   &::after {

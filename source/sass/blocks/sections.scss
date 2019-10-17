@@ -13,3 +13,10 @@
     margin-left: -2px;
   }
 }
+
+@media (max-width: $tablet-width - 1) {
+  .sections__title {
+    height: 74px;
+    margin: 0;
+  }
+}

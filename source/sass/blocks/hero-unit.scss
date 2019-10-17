@@ -70,6 +70,10 @@
   &:hover {
     opacity: 0.9;
   }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .hero-unit__btn-mobile {
@@ -90,6 +94,14 @@
   line-height: 16px;
   opacity: 0.5;
   transform: rotate(-90deg);
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .hero-unit__picture {

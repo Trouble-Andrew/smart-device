@@ -35,15 +35,14 @@
   line-height: 24px;
   letter-spacing: 0.04em;
   color: #1b2d37;
-  opacity: 0.5;
   text-transform: uppercase;
 
   &:hover {
-    opacity: 0.9;
+    opacity: 0.6;
   }
 
   &:active {
-    opacity: 0.6;
+    opacity: 0.3;
   }
 }
 

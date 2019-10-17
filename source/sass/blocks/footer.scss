@@ -116,7 +116,7 @@
 
 @media (max-width: $tablet-width - 1) {
   .footer {
-    padding-bottom: 24px;
+    padding-bottom: 28px;
   }
 
   .footer__col--1 {
@@ -126,11 +126,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 69px;
+    margin-bottom: 53px;
   }
 
   .footer__col--2 {
-    margin-bottom: 7px;
+    // margin-bottom: 7px;
   }
 
   .footer__col--2,

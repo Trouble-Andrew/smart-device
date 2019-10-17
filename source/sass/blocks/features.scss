@@ -9,6 +9,10 @@
   flex-wrap: wrap;
 }
 
+.features__item-svg {
+  fill: $bg-blue;
+}
+
 .features__item {
   @include clear-mp;
   @include clear-list;
@@ -31,8 +35,8 @@
       color: $c-text-white;
     }
 
-    & path {
-      fill: red;
+    & .features__item-svg {
+      fill: $bg-white;
     }
   }
 }

@@ -3,6 +3,10 @@
   display: block;
   height: 100%;
 
+  & img {
+    object-fit: cover;
+  }
+
   &::after {
     position: absolute;
     content: ">";

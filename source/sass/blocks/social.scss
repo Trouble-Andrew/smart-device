@@ -1,12 +1,12 @@
 .social__list {
   @include clear-mp;
   display: flex;
-  justify-content: space-between;
-  width: 110px;
+  justify-content: flex-start;
 }
 
 .social__item {
   @include clear-list;
+  margin-right: 14px;
 }
 
 .social__link {
@@ -24,13 +24,15 @@
   }
 }
 
+@media (max-width: $desktop-width - 1) {
+  .social__item:last-child {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: $tablet-width - 1) {
   .social {
     display: flex;
     justify-content: center;
-  }
-
-  .social__list {
-    margin-left: -4px;
   }
 }

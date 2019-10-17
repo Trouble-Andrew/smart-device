@@ -1,35 +1,7 @@
-@font-face {
-  font-family: "Roboto Condensed";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/Robotocondensed.woff2") format("woff2"), url("../fonts/Robotocondensed.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Roboto Condensed";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/Robotocondensedbold.woff2") format("woff2"), url("../fonts/Robotocondensedbold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/RobotoRegular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "PTMono";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/PTMono-Regular.woff") format("woff");
-}
-
 html {
   height: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -40,8 +12,6 @@ html {
 
 body {
   @include clear-mp;
-  font-family: $ff-base;
-  font-size: $fz-base;
   color: $c-text-base;
   background-color: $bg-white;
   min-width: 320px;

@@ -27,7 +27,7 @@
   border: none;
   background-color: #19baff;
   color: $c-text-white;
-  width: 270px;
+  width: 95%;
   padding-left: 19px;
   padding-top: 12px;
   padding-bottom: 18px;
@@ -172,8 +172,16 @@
 }
 
 @media (max-width: $desktop-width - 1) {
+  .form__field-wrapper {
+    width: 47%;
+  }
+
+  .form__field-wrapper--area {
+    width: 100%;
+  }
+
   .form__input {
-    width: 280px;
+    width: 100%;
     padding-left: 17px;
     padding-bottom: 21px;
   }

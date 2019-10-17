@@ -2,7 +2,6 @@
   position: relative;
   background-color: transparent;
   color: $c-text-white;
-  font-size: $fz-base;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -17,47 +16,6 @@
   padding-right: 15px;
   z-index: 100;
   flex: 0 0 auto;
-}
-
-.page-header__logo {
-  @include clear-link;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 250px;
-  height: 52px;
-  color: $c-text-white;
-  padding-left: 65px;
-  padding-top: 6px;
-}
-
-.page-header__logo-title {
-  @include clear-mp;
-  font-family: "Roboto Condensed", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 29px;
-  color: $c-text-white;
-  margin-bottom: 3px;
-}
-
-.page-header__logo-subtitle {
-  @include clear-mp;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  color: #788891;
-}
-
-.page-header__logo-svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 52px;
-  height: 52px;
 }
 
 @media (max-width: $desktop-width - 1) {

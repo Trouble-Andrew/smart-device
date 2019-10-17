@@ -1,23 +1,35 @@
 .offers {
   background-color: #1b2d37;
-  padding-bottom: 125px;
+  padding-bottom: 102px;
 }
 
 .offers__list {
   @include clear-mp;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .offers__item {
   @include clear-mp;
   @include clear-list;
-  width: 32%;
+  width: 31.5%;
   height: 620px;
+  margin-bottom: 25px;
+  margin-right: 25px;
 
   & img {
     height: 100%;
   }
+}
+
+.offers__item:nth-child(3n+3) {
+  margin-right: 0;
+  break-after: always;
+}
+
+.offers__item:last-child {
+  margin-right: 0;
 }
 
 .offers__title {
@@ -52,6 +64,7 @@
   }
 
   .offers__item {
+    margin-right: 0;
     width: 100%;
     height: 256px;
     margin-bottom: 46px;

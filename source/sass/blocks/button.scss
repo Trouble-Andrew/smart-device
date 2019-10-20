@@ -1,7 +1,7 @@
 .btn {
   @include clear-link;
   display: inline-block;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -21,12 +21,11 @@
 
   &:hover,
   &:focus {
-    color: #ffffff;
-    background-color: $bg-blue;
+    opacity: 0.6;
   }
 
   &:active {
     color: $bg-social-hov;
-    opacity: 0.6;
+    opacity: 0.3;
   }
 }

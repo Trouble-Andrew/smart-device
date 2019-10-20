@@ -20,7 +20,7 @@
 
 .form__field-wrapper--area {
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .form__input {
@@ -30,10 +30,15 @@
   width: 95%;
   padding-left: 19px;
   padding-top: 12px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
+  font-family: "PTMono", "Consolas", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
 
   &::placeholder {
-    font-family: "PTMono", sans-serif;
+    font-family: "PTMono", "Consolas", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -49,7 +54,7 @@
 
 .form__textarea {
   @include clear-mp;
-  font-family: "PTMono", sans-serif;
+  font-family: "PTMono", "Consolas", sans-serif;
   font-style: normal;
   font-weight: normal;
   width: 100%;
@@ -65,7 +70,7 @@
   resize: none;
 
   &::placeholder {
-    font-family: "PTMono", sans-serif;
+    font-family: "PTMono", "Consolas", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -97,7 +102,7 @@
 }
 
 .form__checkbox-label {
-  font-family: "PTMono", sans-serif;
+  font-family: "PTMono", "Consolas", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -112,6 +117,12 @@
 
   position: relative;
   display: inline-block;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 
   &:hover::before,
   &:focus::before {
@@ -225,6 +236,14 @@
     &::after {
       left: 3px;
       top: 27px;
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .form__field-wrapper {
+    & label {
+      display: none;
     }
   }
 }

@@ -23,7 +23,7 @@
     left: -785px;
     top: -115px;
     width: 690px;
-    height: 641px;
+    height: 647px;
     background-image: url("../img/request-ap@1x.png");
     background-repeat: no-repeat;
 
@@ -51,7 +51,7 @@
 }
 
 .request__title {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -62,7 +62,7 @@
 
 
 .request__descr {
-  font-family: "PTMono", sans-serif;
+  font-family: "PTMono", "Consolas", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -71,6 +71,18 @@
   margin-top: 10px;
   padding-left: 5px;
   margin-bottom: 51px;
+}
+
+@media (max-width: 1528px) {
+  .request__col {
+    &::before {
+      left: -712px;
+    }
+
+    &::after {
+      right: -424px;
+    }
+  }
 }
 
 @media (max-width: 1200px) {

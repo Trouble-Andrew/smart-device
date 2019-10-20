@@ -15,7 +15,7 @@
 .copyright__item {
   @include clear-mp;
   @include clear-list;
-  font-family: "PTMono", sans-serif;
+  font-family: "PTMono", "Consolas", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -28,7 +28,7 @@
 
 .copyright__link {
   @include clear-link;
-  font-family: "PTMono", sans-serif;
+  font-family: "PTMono", "Consolas", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -57,7 +57,9 @@
 
 @media (max-width: 1200px) {
   .copyright__item--desktop {
-    left: 154px;
+    // left: 154px;
+    left: 0;
+    position: relative;
   }
 }
 

@@ -84,11 +84,11 @@ var openModal = function () {
     var popup = document.querySelector('.modal-form');
     var overlay = document.querySelector('.overlay');
 
-
     if (callButton) {
       callButton.addEventListener('click', function (evt) {
         if (popup) {
           evt.preventDefault();
+          document.getElementsByTagName('body')[0].style.overflow = 'hidden';
           popup.classList.add('modal--show');
           overlay.classList.add('modal--show');
         }
@@ -102,6 +102,19 @@ var openModal = function () {
           evt.preventDefault();
           popup.classList.add('modal--show');
           overlay.classList.add('modal--show');
+          addCloseBtn();
+        });
+      }
+    };
+
+    var addCloseBtn = function () {
+      if (popup) {
+        var closelBtn = document.querySelector('.modal-form__closeBtn');
+        closelBtn.addEventListener('click', function (evt) {
+          evt.preventDefault();
+          document.getElementsByTagName('body')[0].style.overflow = 'scroll';
+          popup.classList.remove('modal--show');
+          overlay.classList.remove('modal--show');
         });
       }
     };
@@ -111,6 +124,7 @@ var openModal = function () {
     overlay.addEventListener('click', function (evt) {
       if (popup) {
         evt.preventDefault();
+        document.getElementsByTagName('body')[0].style.overflow = 'scroll';
         popup.classList.remove('modal--show');
         overlay.classList.remove('modal--show');
       }
@@ -119,6 +133,7 @@ var openModal = function () {
     window.addEventListener('keydown', function (evt) {
       if (popup) {
         if (evt.keyCode === 27) {
+          document.getElementsByTagName('body')[0].style.overflow = 'scroll';
           if (popup.classList.contains('modal--show')) {
             evt.preventDefault();
             popup.classList.remove('modal--show');
@@ -134,6 +149,15 @@ var openModal = function () {
   }
 };
 
+var increaseSectionWidth = function () {
+  var screenSize = document.body.clientWidth;
+  var sectionsListLitems = document.querySelectorAll('.sections__item');
+  var sectionColumn2 = document.querySelector('.footer__col--2');
+  if (screenSize > 1200 && sectionsListLitems.length > 8) {
+    sectionColumn2.style.width = '70%';
+  }
+};
+
 addEvent(window, 'resize', function () {
   setAccordion();
   openModal();
@@ -142,3 +166,35 @@ addEvent(window, 'resize', function () {
 setAccordion();
 openModal();
 textChecker();
+increaseSectionWidth();
+
+var phoneInput = document.querySelector('#phone');
+var modalphoneInput = document.querySelector('#modal-phone');
+
+var getPhoneMask = function () {
+  if (!(event.key === 'ArrowLeft' || event.key === 'ArrowRight' || event.key === 'Backspace' || event.key === 'Tab')) {
+    event.preventDefault();
+  }
+  var mask = '+7 (111) 111-11-11';
+
+  if (/[0-9\+\ \-\(\)]/.test(event.key)) {
+    var currentString = this.value;
+    var currentLength = currentString.length;
+    if (/[0-9]/.test(event.key)) {
+      if (mask[currentLength] === '1') {
+        this.value = currentString + event.key;
+      } else {
+        for (var i = currentLength; i < mask.length; i++) {
+          if (mask[i] === '1') {
+            this.value = currentString + event.key;
+            break;
+          }
+          currentString += mask[i];
+        }
+      }
+    }
+  }
+};
+
+phoneInput.addEventListener('keydown', getPhoneMask);
+modalphoneInput.addEventListener('keydown', getPhoneMask);

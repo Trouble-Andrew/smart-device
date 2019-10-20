@@ -36,21 +36,15 @@
       top: 259px;
       left: 0;
     }
-
-    &::after {
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 100%;
-      background-color: #dcdddc;
-      top: 333px;
-      left: 0;
-    }
   }
 
   .page-footer__container {
     justify-content: center;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page-footer__logo-svg {
+    left: 24px;
   }
 }

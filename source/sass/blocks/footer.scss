@@ -19,7 +19,7 @@
 }
 
 .footer__col--2 {
-  width: 35%;
+  width: 45%;
   margin-left: -2px;
 }
 
@@ -39,7 +39,7 @@
 
 .footer__text {
   display: none;
-  font-family: "PTMono", sans-serif;
+  font-family: "PTMono", "Consolas", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -52,7 +52,7 @@
 
 .footer__link {
   @include clear-link;
-  font-family: "PTMono", sans-serif;
+  font-family: "PTMono", "Consolas", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -70,7 +70,7 @@
 }
 
 .footer__title {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -81,6 +81,17 @@
   text-transform: uppercase;
   color: #1b2d37;
   margin-bottom: 25px;
+}
+
+
+@media (max-width: 1200px) {
+  .footer__col--1 {
+    width: 25%;
+  }
+
+  .footer__col--2 {
+    width: 48%;
+  }
 }
 
 @media (max-width: $desktop-width - 1) {
@@ -116,7 +127,7 @@
 
 @media (max-width: $tablet-width - 1) {
   .footer {
-    padding-bottom: 28px;
+    padding-bottom: 2px;
   }
 
   .footer__col--1 {
@@ -146,20 +157,27 @@
     margin-bottom: 32px;
   }
 
+  .footer__list {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .footer__title {
     cursor: pointer;
     margin-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .footer__title--plus {
     background-image: url("../img/icon-plus.png");
-    background-position: 100%;
+    background-position: 95%;
     background-repeat: no-repeat;
   }
 
   .footer__title--minus {
     background-image: url("../img/icon-minus.png");
-    background-position: 100%;
+    background-position: 95%;
     background-repeat: no-repeat;
   }
 
@@ -170,9 +188,5 @@
   .footer__logo {
     padding-left: 90px;
     margin-bottom: 7px;
-  }
-
-  .page-footer__logo-svg {
-    left: 24px;
   }
 }

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Smart Device: Магазин печатных плат" content="Печатные платы производство и монтаж, поставка комплектующих, блоков и модулей, Author: Terekhov A. M.,">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -22,7 +23,7 @@
       <p class="page-header__logo-subtitle logo__subtitle">умные технологии</p>
     </a>
     <nav class="main-nav">
-      <button type="button" name="button" class="main-nav__toggle"></button>
+      <button type="button" name="toggle" class="main-nav__toggle">Открыть меню</button>
       <a href="mailto:info@sd.ru" class="main-nav__email email">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve" class="main-nav__email-svg">
           <use xlink:href="img/sprite_auto.svg#icon-email"></use>
@@ -35,7 +36,7 @@
         </svg>
         +7 (495) 000 52 52
       </a>
-      <button type="button" name="button" class="main-nav__btn btn">Заказать звонок</button>
+      <button type="button" name="call" class="main-nav__btn btn">Заказать звонок</button>
     </nav>
   </header>
   <main class="page-main">
@@ -43,7 +44,7 @@
       <div class="hero-unit__container">
         <h1 class="hero-unit__title">Печатные платы</h1>
         <p class="hero-unit__descr">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <button type="button" name="button" class="hero-unit__btn btn">Получить бесплатную консультацию<span class="hero-unit__btn-mobile">Бесплатная консультация</span></button>
+        <a href="#request" class="hero-unit__btn btn">Получить бесплатную консультацию<span class="hero-unit__btn-mobile">Бесплатная консультация</span></a>
         <a href="#about-us" class="hero-unit__scroll">Скролл вниз</a>
         <div class="hero-unit__picture"></div>
       </div>
@@ -102,7 +103,7 @@
               <picture>
                 <source media="(min-width: 1024px)" srcset="img/offer-1-desktop@1x.png 1x, img/offer-1-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/offer-1-tablet@1x.png 1x, img/offer-1-tablet@2x.png 2x">
-                <img src="img/offer-1-mobile@1x.png" srcset="img/offer-1-mobile@2x.png 2x" alt="Печатные платы">
+                <img src="img/offer-1-mobile@1x.png" srcset="img/offer-1-mobile@2x.png 2x" alt="Производство печатных плат">
               </picture>
             </a>
           </li>
@@ -112,7 +113,7 @@
               <picture>
                 <source media="(min-width: 1024px)" srcset="img/offer-2-desktop@1x.png 1x, img/offer-2-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/offer-2-tablet@1x.png 1x, img/offer-2-tablet@2x.png 2x">
-                <img src="img/offer-2-mobile@1x.png" srcset="img/offer-2-mobile@2x.png 2x" alt="Печатные платы">
+                <img src="img/offer-2-mobile@1x.png" srcset="img/offer-2-mobile@2x.png 2x" alt="Монтаж печатных плат">
               </picture>
             </a>
           </li>
@@ -122,14 +123,14 @@
               <picture>
                 <source media="(min-width: 1024px)" srcset="img/offer-3-decktop@1x.png 1x, img/offer-3-decktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/offer-3-tablet@1x.png 1x, img/offer-3-tablet@2x.png 2x">
-                <img src="img/offer-3-mobile@1x.png" srcset="img/offer-3-mobile@2x.png 2x" alt="Печатные платы">
+                <img src="img/offer-3-mobile@1x.png" srcset="img/offer-3-mobile@2x.png 2x" alt="Комплектующие для светотехники">
               </picture>
             </a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="request">
+    <section class="request" id="request">
       <div class="container">
         <div class="request__col">
           <h3 class="request__title">Остались вопросы? Задайте их нам!</h3>
@@ -268,6 +269,7 @@
   <section class="modal modal-form">
     <h3 class="modal-form__title">Закажите звонок</h3>
     <p class="modal-form__descr">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+    <button type="button" name="modal-close" class="modal-form__closeBtn btn">Закрыть окно</button>
 
     <form action="#" method="get" class="form">
       <div class="form__fieldset">

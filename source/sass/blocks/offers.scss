@@ -6,17 +6,19 @@
 .offers__list {
   @include clear-mp;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .offers__item {
   @include clear-mp;
   @include clear-list;
-  width: 31.5%;
+  // width: 31.5%;
+  max-width: 370px;
   height: 620px;
   margin-bottom: 25px;
-  margin-right: 25px;
+  margin-right: 30px;
 
   & img {
     height: 100%;
@@ -43,6 +45,12 @@
   margin-bottom: 51px;
 }
 
+@media (max-width: 1199px) {
+  .offers__item {
+    width: 31%;
+  }
+}
+
 @media (max-width: $desktop-width - 1) {
   .offers {
     padding-bottom: 32px;
@@ -66,6 +74,7 @@
   .offers__item {
     margin-right: 0;
     width: 100%;
+    max-width: 100%;
     height: 256px;
     margin-bottom: 46px;
   }

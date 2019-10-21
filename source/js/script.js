@@ -155,6 +155,8 @@ var increaseSectionWidth = function () {
   var sectionColumn2 = document.querySelector('.footer__col--2');
   if (screenSize >= 1024 && sectionsListLitems.length > 8) {
     sectionColumn2.style.width = '70%';
+  } else {
+    sectionColumn2.style.width = '48%';
   }
 };
 
@@ -172,6 +174,7 @@ var increaseSectionHeight = function () {
 addEvent(window, 'resize', function () {
   setAccordion();
   openModal();
+  increaseSectionWidth();
 });
 
 setAccordion();

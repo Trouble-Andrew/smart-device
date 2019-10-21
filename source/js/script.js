@@ -159,8 +159,9 @@ var increaseSectionWidth = function () {
 };
 
 var increaseSectionHeight = function () {
+  var screenSize = document.body.clientWidth;
   var sectionsListLitems = document.querySelectorAll('.sections__item');
-  if (sectionsListLitems.length > 8) {
+  if (screenSize > 1024 && sectionsListLitems.length > 8) {
     sectionsListLitems.forEach(function (element) {
       element.style.marginLeft = '0';
     });

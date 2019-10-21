@@ -156,7 +156,7 @@ var increaseSectionWidth = function () {
   if (screenSize >= 1024 && sectionsListLitems.length > 8) {
     sectionColumn2.style.width = '70%';
   } else {
-    sectionColumn2.style.width = '48%';
+    sectionColumn2.style.width = '45%';
   }
   if (screenSize < 768) {
     sectionColumn2.style.width = '100%';

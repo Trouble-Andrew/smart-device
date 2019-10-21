@@ -167,10 +167,10 @@ var increaseSectionHeight = function () {
   var screenSize = document.body.clientWidth;
   var sectionsListLitems = document.querySelectorAll('.sections__item');
   if (screenSize >= 1024 && sectionsListLitems.length > 8) {
-    sectionsListLitems.forEach(function (element) {
-      element.style.marginLeft = '0';
-    });
     sectionsList.style.height = '330px';
+    for (var i = 0; i < sectionsListLitems.length; i++) {
+      sectionsListLitems[i].style.marginLeft = '0';
+    }
   } else if (screenSize < 1024 && sectionsListLitems.length > 8) {
     sectionsList.style.height = 'auto';
   }

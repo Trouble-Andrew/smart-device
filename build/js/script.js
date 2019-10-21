@@ -158,6 +158,16 @@ var increaseSectionWidth = function () {
   }
 };
 
+var increaseSectionHeight = function () {
+  var sectionsListLitems = document.querySelectorAll('.sections__item');
+  if (sectionsListLitems.length > 8) {
+    sectionsListLitems.forEach(function (element) {
+      element.style.marginLeft = '0';
+    });
+    sectionsList.style.height = '330px';
+  }
+};
+
 addEvent(window, 'resize', function () {
   setAccordion();
   openModal();
@@ -167,6 +177,7 @@ setAccordion();
 openModal();
 textChecker();
 increaseSectionWidth();
+increaseSectionHeight();
 
 var phoneInput = document.querySelector('#phone');
 var modalphoneInput = document.querySelector('#modal-phone');

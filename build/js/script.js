@@ -158,6 +158,9 @@ var increaseSectionWidth = function () {
   } else {
     sectionColumn2.style.width = '48%';
   }
+  if (screenSize < 768) {
+    sectionColumn2.style.width = '100%';
+  }
 };
 
 var increaseSectionHeight = function () {
@@ -175,6 +178,7 @@ addEvent(window, 'resize', function () {
   setAccordion();
   openModal();
   increaseSectionWidth();
+  increaseSectionHeight();
 });
 
 setAccordion();

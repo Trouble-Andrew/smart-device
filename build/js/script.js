@@ -171,6 +171,8 @@ var increaseSectionHeight = function () {
       element.style.marginLeft = '0';
     });
     sectionsList.style.height = '330px';
+  } else if (screenSize < 1024 && sectionsListLitems.length > 8) {
+    sectionsList.style.height = 'auto';
   }
 };
 

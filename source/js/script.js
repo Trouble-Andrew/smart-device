@@ -153,7 +153,7 @@ var increaseSectionWidth = function () {
   var screenSize = document.body.clientWidth;
   var sectionsListLitems = document.querySelectorAll('.sections__item');
   var sectionColumn2 = document.querySelector('.footer__col--2');
-  if (screenSize > 1200 && sectionsListLitems.length > 8) {
+  if (screenSize >= 1024 && sectionsListLitems.length > 8) {
     sectionColumn2.style.width = '70%';
   }
 };
@@ -161,7 +161,7 @@ var increaseSectionWidth = function () {
 var increaseSectionHeight = function () {
   var screenSize = document.body.clientWidth;
   var sectionsListLitems = document.querySelectorAll('.sections__item');
-  if (screenSize > 1024 && sectionsListLitems.length > 8) {
+  if (screenSize >= 1024 && sectionsListLitems.length > 8) {
     sectionsListLitems.forEach(function (element) {
       element.style.marginLeft = '0';
     });
